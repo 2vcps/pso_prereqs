@@ -14,6 +14,8 @@ Clone the repo
 git clone https://github.com/2vcps/pso_prereqs.git
 ```
 
+Build the releases for the prereqs.
+
 ```
 bosh releases
 cd pso_prereqs
@@ -22,7 +24,7 @@ bosh create-release
 bosh upload-release
 ```
 
-Now edit the runtimepso.yaml to match your release and add or append this to the runtime-config for Pivotal
+Now edit the runtimepso.yaml to match your release note the version number when you do the ```bosh create-release``` and add or append this to the runtime-config for Pivotal
 
 ```
 vi runtimepso.yaml
