@@ -1,0 +1,15 @@
+name: pso_prereqs
+version: 0+dev.7
+commit_hash: non-git
+uncommitted_changes: false
+jobs:
+- name: psoprereqs-pkg-install
+  version: 5069ab5ca5471425c83a8c3c73802801d73d93ca
+  fingerprint: 5069ab5ca5471425c83a8c3c73802801d73d93ca
+  sha1: 01503d685b59c549cbf948cc3a10bfdaf1685ca8
+packages:
+- name: psoprereqs
+  version: 1ea3ae4c942ad1920c58ca19b961d5bd0f5c27ae
+  fingerprint: 1ea3ae4c942ad1920c58ca19b961d5bd0f5c27ae
+  sha1: 97f5ef33746990526a4e6c3417a367c60a0a970f
+  dependencies: []
