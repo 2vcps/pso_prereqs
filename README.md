@@ -45,12 +45,11 @@ Now from your Ops Manager you have to Review the Pending Changes and Apply. This
 ### Install Helm
 Use the instructions from the PKS and Tiller page here:
 
-<https://docs.pivotal.io/runtimes/pks/1-2/helm.html>
+<https://docs.pivotal.io/runtimes/pks/1-3/helm.html>
 
 ```
 helm init --service-account tiller
 ```
-
 
 ### Install PSO
 
@@ -59,3 +58,13 @@ helm init --service-account tiller
 ```
 helm install -n pso pure/pure-k8s-plugin -f pure.yaml
 ```
+
+### Notes
+
+* This requires the PKS VM's be on the network that has IP access to the FlashArray or FlashBlade. I have yet to find a way to add a NIC to the PKS stemcell for an unroutable (ip storage only) network.
+
+* I am claiming this method is at least not "unsupported" by PKS. As other third party software uses this to make needed changes to the stem at runtime.
+
+https://docs.portworx.com/portworx-install-with-kubernetes/on-premise/install-pks/#enable-zero-downtime-upgrades-for-portworx-pks-clusters
+
+https://docs.datadoghq.com/integrations/cloud_foundry/
