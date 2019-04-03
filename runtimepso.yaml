@@ -1,0 +1,10 @@
+releases:
+- name: pso_prereqs
+  version: 0+dev.10
+
+addons:
+- name: psoprereqs-pkg-install
+  jobs:
+  - name: psoprereqs-pkg-install
+    release: pso_prereqs
+
