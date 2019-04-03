@@ -49,12 +49,12 @@ Use the instructions from the PKS and Tiller page here:
 
 ```
 helm init --service-account tiller
-'''
+```
 
 
 ### Install PSO
 
-https://github.com/purestorage/helm-charts/tree/master/pure-k8s-plugin
+<https://github.com/purestorage/helm-charts/tree/master/pure-k8s-plugin>
 
 ```
 helm install -n pso pure/pure-k8s-plugin -f pure.yaml
