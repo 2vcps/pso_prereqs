@@ -32,5 +32,5 @@ apt-get install -o debug::nolocking=true -o dir::cache=$cacheDir -y -d \
 #
 ######################################
 
-cd $cacheDir
+cd $cacheDir/archives
 install-debs-in-order . > install-packages.sh
