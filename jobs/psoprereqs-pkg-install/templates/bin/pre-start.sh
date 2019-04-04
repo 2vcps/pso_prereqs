@@ -3,4 +3,5 @@
 set -x
 
 cd /var/vcap/packages/psoprereqs/apt/cache/archives
-. install-packages.sh
+chmod +x install-packages.sh
+./install-packages.sh

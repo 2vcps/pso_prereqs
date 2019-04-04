@@ -1,6 +1,6 @@
 releases:
 - name: pso_prereqs
-  version: 0+dev.2
+  version: 0+dev.3
 
 addons:
 - name: psoprereqs-pkg-install
