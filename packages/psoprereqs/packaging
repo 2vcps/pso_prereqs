@@ -27,8 +27,7 @@ apt-get install install-debs-in-order
 # Add list of packages to install here
 apt-get install -o debug::nolocking=true -o dir::cache=$cacheDir -y -d \
   open-iscsi \
-  multipath-tools \
-  nfs-common
+  multipath-tools
 #
 ######################################
 
