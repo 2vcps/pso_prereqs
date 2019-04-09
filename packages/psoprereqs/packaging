@@ -14,22 +14,22 @@ chmod 1777 /tmp
 
 apt-get install -y apt-transport-https apt-utils
 
-curl -sL https://raw.githubusercontent.com/starkandwayne/homebrew-cf/master/public.key | apt-key add -
-echo "deb http://apt.starkandwayne.com stable main" | tee /etc/apt/sources.list.d/starkandwayne.list
+#curl -sL https://raw.githubusercontent.com/starkandwayne/homebrew-cf/master/public.key | apt-key add -
+#echo "deb http://apt.starkandwayne.com stable main" | tee /etc/apt/sources.list.d/starkandwayne.list
 apt-get update
 
-apt-get install install-debs-in-order
+#apt-get install install-debs-in-order
 #apt-get install -y multipath-tools nfs-common
 #apt-get update
 
 ######################################
 #
 # Add list of packages to install here
-apt-get install -o debug::nolocking=true -o dir::cache=$cacheDir -y -d \
-  open-iscsi \
-  multipath-tools
+#apt-get install -o debug::nolocking=true -o dir::cache=. -y -d \
+#  open-iscsi \
+#  multipath-tools
 #
 ######################################
 
-cd $cacheDir/archives
-install-debs-in-order . > install-packages.sh
+#cd $cacheDir/archives
+#install-debs-in-order . > install-packages.sh

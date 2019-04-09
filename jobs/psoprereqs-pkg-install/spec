@@ -2,4 +2,4 @@
 name: psoprereqs-pkg-install
 packages: ["psoprereqs"]
 templates:
-  bin/pre-start.sh: bin/pre-start
+  bin/post-deploy.sh: bin/post-deploy
