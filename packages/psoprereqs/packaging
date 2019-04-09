@@ -4,9 +4,9 @@ set -eux
 
 # SEE BELOW to specify the Debian packages to install
 
-baseDir=$BOSH_INSTALL_TARGET
-cacheDir="$baseDir/apt/cache"
-mkdir -p "$cacheDir"
+#baseDir=$BOSH_INSTALL_TARGET
+#cacheDir="$baseDir/apt/cache"
+#mkdir -p "$cacheDir"
 
 # https://bugs.launchpad.net/ubuntu/+source/apt/+bug/1577926
 ls -al /tmp
